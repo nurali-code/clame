@@ -7,6 +7,7 @@
     <title>CLAME</title>
     <meta name="theme-color" content="#9b47c9">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -25,9 +26,9 @@
                 </div>
             </header>
 
-            <img class="main__img" src="img/c.png" alt="c">
+            <img data-aos="fade-up" class="main__img" src="img/c.png" alt="c">
 
-            <div class="progress">
+            <div data-aos="fade-up" data-aos-delay="300" class="progress">
                 <h1 class="progress__headline">Progress</h1>
                 <div class="progress-range">
                     <span class="progress-range__item" style="width: 50%;"></span>
@@ -49,7 +50,7 @@
 
     <div class="ref">
         <div class="container fx">
-            <div class="ref-item">
+            <div class="ref-item" data-aos="fade-up">
                 <h3 class="ref__heading">
                     How much did you get
                     <mark>Tiberius!</mark>
@@ -59,7 +60,7 @@
                     <span>0</span>
                 </p>
             </div>
-            <div class="ref-item">
+            <div class="ref-item" data-aos="fade-up" data-aos-delay="300">
                 <h3 class="ref__heading">
                     How many users have you
                     <mark>invited!</mark>
@@ -74,21 +75,21 @@
 
     <section class="quests">
         <div class="container">
-            <h2>QUESTS</h2>
+            <h2 data-aos="fade-up">QUESTS</h2>
             <div class="fxw">
-                <div class="quests-item">
+                <div class="quests-item" data-aos="fade-up" data-aos-delay="200">
                     <img src="img/i-1.jpg" alt="i">
                     <a href="#" target="_blank" class="btn">Subscribe to X</a>
                 </div>
-                <div class="quests-item">
+                <div class="quests-item" data-aos="fade-up" data-aos-delay="400">
                     <img src="img/i-2.jpg" alt="i">
                     <a href="#" target="_blank" class="btn">Subscribe to TG</a>
                 </div>
-                <div class="quests-item">
+                <div class="quests-item" data-aos="fade-up" data-aos-delay="600">
                     <img src="img/i-3.jpg" alt="i">
                     <a href="#" target="_blank" class="btn">Subscribe to DS</a>
                 </div>
-                <div class="quests-item">
+                <div class="quests-item" data-aos="fade-up" data-aos-delay="800">
                     <img src="img/i-4.jpg" alt="i">
                     <a href="#" target="_blank" class="btn">Connect you mail</a>
                 </div>
@@ -98,7 +99,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-item">
+            <div class="footer-item" data-aos="fade-up">
                 <img src="img/footer-i.jpg" alt="i">
                 <h2 class="footer__heading">Invite 5 friends and get 100 <mark>tiberius</mark></h2>
                 <a href="#" target="_blank" class="btn">PICK UP TIBERIUM</a>
@@ -107,8 +108,9 @@
     </footer>
 
 
-
+    <script src="js/aos.js"></script>
     <script>
+        AOS.init({ duration: 1000,  });
         function copyText() {
             var tempInput = document.getElementById('tempInput');
             tempInput.disabled = false;
