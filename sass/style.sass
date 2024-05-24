@@ -137,6 +137,32 @@
         &__small
             font-size: 14px
 
+    @media screen and ( max-width: 1000px )
+        padding: 30px 30px 0
+        border-radius: 50px 50px 0 0
+
+        &__headline
+            font-size: 36px
+
+        &-rage
+            height: 20px
+
+        &__heading
+            font-size: 20px
+
+        &__code
+            font-size: 26px
+
+        &__small
+            margin-bottom: 20px
+
+        &-link
+            max-width: 88%
+            padding: 0 25px
+            .btn
+                padding: 7px 32px 5px
+                font-size: 22px
+
 .ref
     padding: 100px 0 0
     .container
@@ -191,6 +217,21 @@
             img
                 width: 48%
 
+    @media screen and ( max-width: 1000px )
+        .container 
+            justify-content: space-between
+
+        &-item 
+            border-radius: 30px
+            padding: 30px 30px 10px
+        &__heading 
+            font-size: 16px
+            mark 
+                font-size: 24px
+
+        &__num 
+            font-size: 40px
+
 .quests
     padding: 180px 0 110px
     text-align: center
@@ -231,5 +272,25 @@
         .fxw
             justify-content: space-evenly
             gap: 80px 0
+
+    @media screen and ( max-width: 1000px )
+        h2 
+            font-size: 50px
+            margin-bottom: 60px
+
+        .fxw
+            justify-content: space-between
+            gap: 64px 0
+
+        &-item 
+            width: 47%
+            padding: 22px 28px 30px
+            img 
+                display: block
+                margin: 0 auto 
+                max-width: 90%
+
+            .btn 
+                font-size: 18px
 
 @import 'footer'
