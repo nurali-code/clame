@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLAME</title>
+    <meta name="theme-color" content="#ED1C25">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <header class="header fx">
+                <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+                <div class="header-btns fx">
+                    <a href="#" class="header__amount fx">
+                        <img src="img/crust.png" alt="c">
+                        <span>0</span>
+                    </a>
+                    <a href="#" class="header__acaunt"><img src="img/prifile.jpg" alt="c"></a>
+                </div>
+            </header>
+
+            <img class="main__img" src="img/c.png" alt="c">
+
+            <div class="progress">
+                <h1 class="progress__headline">Progress</h1>
+                <div class="progress-range">
+                    <span class="progress-range__item" style="width: 50%;"></span>
+                    <span class="progress-range__num">0</span>
+                </div>
+                <p class="progress__descr">0/100 XP</p>
+                <h3 class="progress__heading">Your wallet</h3>
+                <p class="progress__code">0xD9785E...489528d2</p>
+                <p class="progress__small">Joined 15.05.2024</p>
+                <h3 class="progress__heading">Invite link</h3>
+                <div class="progress-link">
+                    <input type="text" id="tempInput" disabled value="hhtts://link/invite/clamer">
+                    <button class="btn" onclick="copyText()">Copy</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="ref">
+        <div class="container fx">
+            <div class="ref-item">
+                <h3 class="ref__heading">
+                    How much did you get
+                    <mark>Tiberius!</mark>
+                </h3>
+                <p class="ref__num fx">
+                    <img src="img/users.png" alt="u">
+                    <span>0</span>
+                </p>
+            </div>
+            <div class="ref-item">
+                <h3 class="ref__heading">
+                    How many users have you
+                    <mark>invited!</mark>
+                </h3>
+                <p class="ref__num fx">
+                    <img src="img/crust-2.png" class="screen" alt="u">
+                    <span>0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="quests">
+        <div class="container">
+            <h2>QUESTS</h2>
+            <div class="fxw">
+                <div class="quests-item">
+                    <img src="img/i-1.jpg" alt="i">
+                    <a href="#" target="_blank" class="btn">Subscribe to X</a>
+                </div>
+                <div class="quests-item">
+                    <img src="img/i-2.jpg" alt="i">
+                    <a href="#" target="_blank" class="btn">Subscribe to TG</a>
+                </div>
+                <div class="quests-item">
+                    <img src="img/i-3.jpg" alt="i">
+                    <a href="#" target="_blank" class="btn">Subscribe to DS</a>
+                </div>
+                <div class="quests-item">
+                    <img src="img/i-4.jpg" alt="i">
+                    <a href="#" target="_blank" class="btn">Connect you mail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-item">
+                <img src="img/footer-i.jpg" alt="i">
+                <h2 class="footer__heading">Invite 5 friends and get 100 <mark>tiberius</mark></h2>
+                <a href="#" target="_blank" class="btn">PICK UP TIBERIUM</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function copyText() {
+            var tempInput = document.getElementById('tempInput');
+            tempInput.disabled = false;
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999);
+            try { document.execCommand('copy'); alert('Text copied: ' + tempInput.value); }
+            catch (err) { console.error('Failed to copy text:', err); }
+            tempInput.disabled = true;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+$prime: #9b47c9
+$sec: #F5F1E5
+$dark: #1E1E1E
+
+html
+    scroll-behavior: smooth
+
+body
+    color: white
+    font-weight: 500
+    background-color: #0f1116
+    font-family: 'DOHYEON', sans-serif
+    min-height: 100vh
+
+    &.is_active
+        overflow: hidden
+
+img
+    max-width: 100%
+
+a,
+button
+    color: #000
+    text-decoration: none
+    transition: all ease .2s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+label
+    display: block
+
+input
+    font-size: 30px
+    line-height: 100%
+    display: block
+    width: 100%
+    border-radius: 18px
+    height: 48px
+    background-color: #1e1f24
+    padding: 0
+
+.fx, .fxw
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.fxw
+    align-items: stretch
+    flex-wrap: wrap
+
+.container
+    max-width: 1680px
+    width: 100%
+    padding: 0 15px
+    margin: 0 auto
+    position: relative
+    z-index: 1
+
+
+mark
+    color: #d185e5
+    background-color: rgba(0, 0, 0, 0)
+
+.btn
+    display: block
+    font-size: 25px
+    font-style: normal
+    font-weight: 700
+    line-height: 120%
+    letter-spacing: 0.16px
+    background-color: $prime
+    color: #fff
+    padding: 10px 32px 6px
+    border-radius: 18px
+    text-align: center
+    border: 1px solid transparent
+
+    &:hover
+        background-color: transparent
+        border-color: $prime
+        color: white
+
+section
+    padding: 55px 0
+    
+@media screen and ( max-width: 1500px )
+    .container
+        padding: 0 60px
+
+    input
+        font-size: 26px
+    
+
+        
+@media screen and ( max-width: 1000px )
+    section
+        
